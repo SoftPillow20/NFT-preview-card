@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [NFT Preview card component](https://github.com/SoftPillow20/NFT-preview-card/index.html)
+- Live Site URL: [NFT Preview card component](https://github.com/SoftPillow20/NFT-preview-card/)
 
 ## My process
 
