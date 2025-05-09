@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10 / 16 = 0.625 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(217, 54%, 11%),
+    hsl(216, 50%, 16%)
+  );
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--gap-s {
+  gap: 0.9rem;
+}
+
+.flex--gap-m {
+  gap: 6.4rem;
+}
+
+.nft-card {
+  padding: 2.4rem;
+  border-radius: 1.1rem;
+  width: 55%;
+  box-shadow: 0 2.4rem 0.6rem 1.8rem hsl(217, 54%, 11%);
+  background-color: hsl(216, 50%, 16%);
+}
+
+.nft-description {
+  padding: 1.8rem 0;
+}
+
+.nft-img-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.nft-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.9rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 0.9rem;
+  background-color: rgba(0, 255, 247, 0.45);
+}
+
+.nft-img-box:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nft-card-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.nft-card-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.nft-price-box {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.nft-price {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-price-duration {
+  color: hsl(215, 51%, 70%);
+}
+
+.nft-creator-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator-profile {
+  width: 3.6rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.creator-name {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-name strong {
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 27em) {
+  html {
+    font-size: 52.65%;
+  }
+
+  .nft-card {
+    width: 80%;
+  }
+
+  .nft-card-name {
+    font-size: 2.4rem;
+  }
+
+  .nft-price-box {
+    font-size: 1.8rem;
+  }
+}
