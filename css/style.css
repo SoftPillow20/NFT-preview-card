@@ -51,7 +51,7 @@ body {
 .nft-card {
   padding: 2.4rem;
   border-radius: 1.1rem;
-  width: 55%;
+  width: 50%;
   box-shadow: 0 2.4rem 0.6rem 1.8rem hsl(217, 54%, 11%);
   background-color: hsl(216, 50%, 16%);
 }
@@ -162,5 +162,19 @@ body {
 
   .nft-price-box {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-height: 41em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .nft-card {
+    width: 40%;
+  }
+
+  .creator-name {
+    font-size: 1.6rem;
   }
 }
